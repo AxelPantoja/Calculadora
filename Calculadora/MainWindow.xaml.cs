@@ -47,7 +47,7 @@ namespace Calculadora
                 }
                 else if (operacion.Contains("-"))
                 {
-                    //Método para restar
+                    resultado = resta(numeros[0]);
                 }
                 else if (operacion.Contains("X"))
                 {
@@ -57,6 +57,10 @@ namespace Calculadora
                 {
                     //Método para dividir
                 }
+            }
+            if (resultado < 0)
+            {
+                banderaSigno = true;
             }
             cadena = resultado.ToString();
             txtRes.Text = cadena;
@@ -285,5 +289,23 @@ namespace Calculadora
             return num1 + numeros[1];
         }
         //Fin suma.
+
+        //Resta:
+        private void btnMenos_Click(object sender, RoutedEventArgs e)
+        {
+            numeros[0] = double.Parse(cadena);
+            cadena += "-";
+            txtOperacion.Text = cadena;
+            cadena = "0";
+            txtRes.Text = cadena;
+        }
+
+        private double resta(double num1)
+        {
+            numeros[1] = double.Parse(cadena);
+            txtOperacion.Text = txtOperacion.Text + cadena;
+            return num1 - numeros[1];
+        }
+        //Fin resta.
     }
 }

@@ -40,7 +40,7 @@
             <Button Name="btn6" Content="6" HorizontalAlignment="Left" Margin="260,103,0,0" VerticalAlignment="Top" Width="75" FontWeight="Bold" FontSize="16" Click="btn6_Click"/>
             <Button Name="btn3" Content="3" HorizontalAlignment="Left" Margin="260,150,0,0" VerticalAlignment="Top" Width="75" FontWeight="Bold" FontSize="16" Click="btn3_Click"/>
             <Button Name="btnPunto" Content="." HorizontalAlignment="Left" Margin="260,192,0,0" VerticalAlignment="Top" Width="75" FontWeight="Bold" FontSize="16" Click="btnPunto_Click"/>
-            <Button Name="btnMenos" Content="-" HorizontalAlignment="Left" Margin="383,103,0,0" VerticalAlignment="Top" Width="75" FontSize="16"/>
+            <Button Name="btnMenos" Content="-" HorizontalAlignment="Left" Margin="383,103,0,0" VerticalAlignment="Top" Width="75" FontSize="16" Click="btnMenos_Click"/>
             <Button Name="btnMas" Content="+" HorizontalAlignment="Left" Margin="383,150,0,0" VerticalAlignment="Top" Width="75" FontSize="16" Click="btnMas_Click"/>
             <Button Name="btnIgual" Content="=" HorizontalAlignment="Left" Margin="383,192,0,0" VerticalAlignment="Top" Width="75" FontSize="16" Click="btnIgual_Click"/>
         </Grid>
